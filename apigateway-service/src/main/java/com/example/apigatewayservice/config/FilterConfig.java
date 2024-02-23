@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 
 //@Configuration
 public class FilterConfig {
-//    @Bean
-    public  RouteLocator gatewayFilter(RouteLocatorBuilder builder) {
+    //@Bean
+    public RouteLocator gatewayFilter(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/first-service/**")
                         .filters(f -> f.addRequestHeader("first-request", "first-request-header")
