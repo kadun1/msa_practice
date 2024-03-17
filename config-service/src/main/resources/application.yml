@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: file:///D:\\WorkSpaces\\git-local-repo
+          uri: https://github.com/kadun1/spring-cloud-config-study.git
           default-label: master
