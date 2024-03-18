@@ -4,9 +4,13 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: file:///D:\\WorkSpaces\\native-file-repo # ${user.home}
         git:
           uri: https://github.com/kadun1/spring-cloud-config-study.git
           default-label: master
