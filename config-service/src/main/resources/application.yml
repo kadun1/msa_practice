@@ -2,6 +2,11 @@ server:
   port: 8888
 
 spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   application:
     name: config-service
   profiles:
@@ -14,3 +19,9 @@ spring:
         git:
           uri: https://github.com/kadun1/spring-cloud-config-study.git
           default-label: master
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
