@@ -100,5 +100,5 @@ management:
         include: refresh, health, beans, httpexchanges, busrefresh
 
 
-token:
-  secret: my_jwt_user_token_secret_key_for_user_service
+#token:
+#  secret: my_jwt_user_token_secret_key_for_user_service
