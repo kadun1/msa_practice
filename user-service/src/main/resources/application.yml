@@ -18,11 +18,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
-#  datasource:
-#    driver-class-name: org.h2.Driver
-#    url: jdbc:h2:mem:testdb
-#    username: sa
-#    password:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    generate-unique-name: true
+    name: testdb
 
 eureka:
   instance:
